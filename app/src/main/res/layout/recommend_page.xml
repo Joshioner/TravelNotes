@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/recommend_notes_background"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relative_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recommend"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+
+
+   <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:id="@+id/recommend_notes_list"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="152dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/bg_round_white"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="30dp"
+                       android:layout_below="@+id/note_image"
+                       android:layout_marginTop="5dp">
+
+                       <com.travelNotes.common.XCRoundImageView
+                           android:id="@+id/recommend_image"
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:layout_centerVertical="true"
+                           android:src="@mipmap/recommend_image" />
+
+                       <TextView
+                           android:id="@+id/label"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="15dp"
+                           android:layout_toEndOf="@+id/recommend_image"
+                           android:layout_toRightOf="@+id/recommend_image"
+                           android:text="专栏：游记"
+                           android:textColor="@color/white"
+                           android:textSize="12dp" />
+
+                       <TextView
+                           android:id="@+id/time"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_toRightOf="@+id/label"
+                           android:text="1天前"
+                           android:textColor="@color/white"
+                           android:textSize="12dp"
+                           android:layout_alignTop="@+id/label"
+                           android:layout_marginLeft="15dp"
+                           />
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginTop="5dp"
+                       android:layout_height="90dp">
+                       <TextView
+                           android:id="@+id/note_title"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="一个人走世界的梦想"
+                           android:textColor="@color/black"
+                           android:textSize="15dp"
+
+                           />
+
+                       <TextView
+                           android:id="@+id/note_content"
+                           android:layout_below="@id/note_title"
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:layout_marginTop="5dp"
+                           android:lineSpacingExtra="3dp"
+                           android:paddingBottom="10dp"
+                           android:text="倾听夜的声音是流淌在心灵深处的极致的音乐，游一处风景，寻一处特色，悟一片心得。"
+                           android:textColor="@color/white" />
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/note_content"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:id="@+id/comment_num"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="2dp"
+                               android:text="5396"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:id="@+id/comment"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="评论"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+
+
+                           <TextView
+                               android:id="@+id/collection_num"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="15dp"
+                               android:layout_marginTop="2dp"
+                               android:text="1523"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="收藏"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                       </LinearLayout>
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="152dp"
+               android:layout_marginTop="15dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/bg_round_white"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="30dp"
+                       android:layout_below="@+id/note_image"
+                       android:layout_marginTop="5dp">
+
+                       <com.travelNotes.common.XCRoundImageView
+                           android:id="@+id/recommend_image1"
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:layout_centerVertical="true"
+                           android:src="@mipmap/recommend_image" />
+
+                       <TextView
+                           android:id="@+id/label1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="15dp"
+                           android:layout_toEndOf="@+id/recommend_image1"
+                           android:layout_toRightOf="@+id/recommend_image1"
+                           android:text="专栏：攻略"
+                           android:textColor="@color/white"
+                           android:textSize="12dp" />
+
+                       <TextView
+                           android:id="@+id/time1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_toRightOf="@+id/label1"
+                           android:text="1天前"
+                           android:textColor="@color/white"
+                           android:textSize="12dp"
+                           android:layout_alignTop="@+id/label1"
+                           android:layout_marginLeft="15dp"
+                           />
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginTop="5dp"
+                       android:layout_height="90dp">
+                       <TextView
+                           android:id="@+id/note_title1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="张家界旅游攻略"
+                           android:textColor="@color/black"
+                           android:textSize="15dp"
+
+                           />
+
+                       <TextView
+                           android:id="@+id/note_content1"
+                           android:layout_below="@id/note_title1"
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:layout_marginTop="5dp"
+                           android:lineSpacingExtra="3dp"
+                           android:paddingBottom="10dp"
+                           android:text="我喜欢那种自由自在的旅行,因为那样的旅行显得纯粹，本来想联系一住处自己游玩的，但后来觉得这样比较累，并且路线不熟，更何况张家界毕竟是在山里玩，不是很方便，于是决定找一当地导游带着玩，无购物，无强制消费，无隐形消费的那种。网上很多不同旅行社的游记、攻略等铺天盖地，而且很多说法不一，很担心碰到皮包公司和野导，那样就不能保证安全，有什么问题也是无处投诉。很难选择，所以只有选择好评多一些，资历深一些的，这样才放心（为了放心，我也没少花功夫看资料，现在想想也值得），在网上看到很多驴友的推荐做的早，口碑也很好的张家界独家记忆旅游网宋慧乔导游好评如潮，都说她是一个年轻、善良；自立、自信、自强的土家族妹子，给我们留下了深刻的印象，更主要的是驴友们评价说他们会为游客省钱，呵呵。来到美丽的张家界后"
+                           android:textColor="@color/white" />
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/note_content1"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:id="@+id/comment_num1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="2dp"
+                               android:text="4567"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:id="@+id/comment1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="评论"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+
+
+                           <TextView
+                               android:id="@+id/collection_num1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="15dp"
+                               android:layout_marginTop="2dp"
+                               android:text="1356"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="收藏"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                       </LinearLayout>
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="152dp"
+               android:layout_marginTop="15dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/bg_round_white"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="30dp"
+                       android:layout_below="@+id/note_image"
+                       android:layout_marginTop="5dp">
+
+                       <com.travelNotes.common.XCRoundImageView
+                           android:id="@+id/recommend_image2"
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:layout_centerVertical="true"
+                           android:src="@mipmap/recommend_image" />
+
+                       <TextView
+                           android:id="@+id/label2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="15dp"
+                           android:layout_toEndOf="@+id/recommend_image2"
+                           android:layout_toRightOf="@+id/recommend_image2"
+                           android:text="专栏：心得"
+                           android:textColor="@color/white"
+                           android:textSize="12dp" />
+
+                       <TextView
+                           android:id="@+id/time2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_toRightOf="@+id/label2"
+                           android:text="1周前"
+                           android:textColor="@color/white"
+                           android:textSize="12dp"
+                           android:layout_alignTop="@+id/label2"
+                           android:layout_marginLeft="15dp"
+                           />
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginTop="5dp"
+                       android:layout_height="90dp">
+                       <TextView
+                           android:id="@+id/note_title2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="魔都：寂静的繁华似锦"
+                           android:textColor="@color/black"
+                           android:textSize="15dp"
+
+                           />
+
+                       <TextView
+                           android:id="@+id/note_content2"
+                           android:layout_below="@id/note_title2"
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:layout_marginTop="5dp"
+                           android:lineSpacingExtra="3dp"
+                           android:paddingBottom="10dp"
+                           android:text="安顿在这个城市已有十年，十年尚不能了然认知一个人，亦或一座城，更何况是这座唤作魔幻之都的城呢"
+                           android:textColor="@color/white" />
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/note_content2"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:id="@+id/comment_num2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="2dp"
+                               android:text="4562"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:id="@+id/comment2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="评论"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+
+
+                           <TextView
+                               android:id="@+id/collection_num2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="15dp"
+                               android:layout_marginTop="2dp"
+                               android:text="1458"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="收藏"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                       </LinearLayout>
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="152dp"
+               android:layout_marginTop="15dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/bg_round_white"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="30dp"
+                       android:layout_below="@+id/note_image"
+                       android:layout_marginTop="5dp">
+
+                       <com.travelNotes.common.XCRoundImageView
+                           android:id="@+id/recommend_image3"
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:layout_centerVertical="true"
+                           android:src="@mipmap/recommend_image" />
+
+                       <TextView
+                           android:id="@+id/label3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="15dp"
+                           android:layout_toEndOf="@+id/recommend_image3"
+                           android:layout_toRightOf="@+id/recommend_image3"
+                           android:text="专栏：风景"
+                           android:textColor="@color/white"
+                           android:textSize="12dp" />
+
+                       <TextView
+                           android:id="@+id/time3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_toRightOf="@+id/label3"
+                           android:text="1月前"
+                           android:textColor="@color/white"
+                           android:textSize="12dp"
+                           android:layout_alignTop="@+id/label3"
+                           android:layout_marginLeft="15dp"
+                           />
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginTop="5dp"
+                       android:layout_height="90dp">
+                       <TextView
+                           android:id="@+id/note_title3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="怒江，与神共度一个平安夜"
+                           android:textColor="@color/black"
+                           android:textSize="15dp"
+
+                           />
+
+                       <TextView
+                           android:id="@+id/note_content3"
+                           android:layout_below="@id/note_title3"
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:layout_marginTop="5dp"
+                           android:lineSpacingExtra="3dp"
+                           android:paddingBottom="10dp"
+                           android:text="12月22日从大理出发，进入怒江傈僳族自治州，怒江峡谷一直在视野里，吸引着我的心。最让我惊讶和心动的不是静静流淌的江水，或者山上鳞次栉比的村庄，而是在冬天成片绽放的油菜花田，顿觉这是个多美好的地方。"
+                           android:textColor="@color/white" />
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/note_content3"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:id="@+id/comment_num3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="2dp"
+                               android:text="2563"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:id="@+id/comment3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="评论"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+
+
+                           <TextView
+                               android:id="@+id/collection_num3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="15dp"
+                               android:layout_marginTop="2dp"
+                               android:text="2654"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="收藏"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                       </LinearLayout>
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

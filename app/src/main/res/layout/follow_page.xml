@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/follow_image"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relative_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/follow"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+
+
+   <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:id="@+id/follow_notes_list"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <LinearLayout
+               android:orientation="vertical" android:layout_width="match_parent"
+               android:layout_height="270dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/bg_round_white"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+
+                   <ImageView
+                       android:id="@+id/note_image1"
+                       android:layout_width="match_parent"
+                       android:layout_height="85dp"
+                       android:background="@mipmap/recommend_background" />
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="80dp"
+                       android:layout_below="@+id/note_image"
+                       android:layout_marginTop="5dp">
+
+                       <com.travelNotes.common.XCRoundImageView
+                           android:id="@+id/my_photo"
+                           android:layout_width="60dp"
+                           android:layout_height="60dp"
+                           android:layout_centerVertical="true"
+                           android:src="@mipmap/my_photo" />
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="15dp"
+                           android:layout_toRightOf="@+id/my_photo"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:id="@+id/note_title"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="一个人走世界的梦想"
+                               android:textColor="@color/white"
+                               android:textSize="18dp" />
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="2dp"
+                               android:layout_marginBottom="3dp"
+                               android:layout_marginTop="3dp"
+                               android:background="@drawable/bg_dotted_line"
+                               android:layerType="software" />
+
+                           <TextView
+                               android:id="@+id/nick_name"
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:text="风过梧桐"
+                               android:textColor="@color/white" />
+                       </LinearLayout>
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp">
+
+                       <TextView
+                           android:id="@+id/note_content"
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:layout_marginLeft="5dp"
+                           android:layout_marginTop="5dp"
+                           android:lineSpacingExtra="3dp"
+                           android:paddingBottom="10dp"
+                           android:text="倾听夜的声音是流淌在心灵深处的极致的音乐，游一处风景，寻一处特色，悟一片心得。"
+                           android:textColor="@color/white" />
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/note_content"
+                           android:layout_marginLeft="15dp"
+                           android:orientation="horizontal">
+
+                           <ImageView
+                               android:layout_width="15dp"
+                               android:layout_height="15dp"
+                               android:src="@mipmap/comment" />
+
+                           <TextView
+                               android:id="@+id/comment_num1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="7dp"
+                               android:layout_marginTop="2dp"
+                               android:text="588"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="Player"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <ImageView
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginLeft="35dp"
+                               android:src="@mipmap/deskclock" />
+
+                           <TextView
+                               android:id="@+id/day_of_week1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="7dp"
+                               android:layout_marginTop="2dp"
+                               android:text="Monday"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:id="@+id/note_time1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="2017.05.10"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                       </LinearLayout>
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="270dp"
+               android:layout_marginTop="20dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/bg_round_white"
+                   android:orientation="vertical"
+                   android:weightSum="1">
+
+
+                   <ImageView
+                       android:id="@+id/note_image2"
+                       android:layout_width="match_parent"
+                       android:layout_height="85dp"
+                       android:background="@mipmap/follow_note_image" />
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="80dp"
+                       android:layout_below="@+id/note_image"
+                       android:layout_marginTop="5dp">
+
+                       <com.travelNotes.common.XCRoundImageView
+                           android:id="@+id/my_photo1"
+                           android:layout_width="60dp"
+                           android:layout_height="60dp"
+                           android:layout_centerVertical="true"
+                           android:src="@mipmap/my_photo1" />
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="15dp"
+                           android:layout_toRightOf="@+id/my_photo1"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:id="@+id/note_title1"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="土耳其，我爱你，像风走了八千里"
+                               android:textColor="@color/white"
+                               android:textSize="18dp" />
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="2dp"
+                               android:layout_marginBottom="3dp"
+                               android:layout_marginTop="3dp"
+                               android:background="@drawable/bg_dotted_line"
+                               android:layerType="software" />
+
+                           <TextView
+                               android:id="@+id/nick_name0"
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:text="小程程"
+                               android:textColor="@color/white" />
+                       </LinearLayout>
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp">
+
+                       <TextView
+                           android:id="@+id/note_content1"
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:layout_marginLeft="5dp"
+                           android:layout_marginTop="5dp"
+                           android:lineSpacingExtra="3dp"
+                           android:paddingBottom="10dp"
+                           android:text="沙与沙不同，海与海远隔。人与人之间的距离也总是这般的奇妙，一起经历的，感受会不同；一同回忆的，故事也不同。"
+                           android:textColor="@color/white" />
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/note_content1"
+                           android:layout_marginLeft="15dp"
+                           android:orientation="horizontal">
+
+                           <ImageView
+                               android:layout_width="15dp"
+                               android:layout_height="15dp"
+                               android:src="@mipmap/comment" />
+
+                           <TextView
+                               android:id="@+id/comment_num"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="7dp"
+                               android:layout_marginTop="2dp"
+                               android:text="5396"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="Player"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <ImageView
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginLeft="35dp"
+                               android:src="@mipmap/deskclock" />
+
+                           <TextView
+                               android:id="@+id/day_of_week"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="7dp"
+                               android:layout_marginTop="2dp"
+                               android:text="Tuesday"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                           <TextView
+                               android:id="@+id/note_time"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="2dp"
+                               android:text="2018.05.20"
+                               android:textColor="@color/white"
+                               android:textSize="10dp" />
+
+                       </LinearLayout>
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

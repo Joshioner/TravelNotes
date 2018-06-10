@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:id="@+id/home_page_bar"
+           android:orientation="vertical"
+           android:background="@mipmap/home_background"
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <RelativeLayout
+                   android:id="@+id/relative_01"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="30dp"
+                   android:layout_marginBottom="8dp"
+                   android:layout_alignParentTop="true">
+                   <TextView
+                       android:id="@+id/textView2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/note"
+                       android:textSize="18dp"
+                       android:layout_centerHorizontal="true"
+                       android:textColor="@color/white"
+                       />
+                   <ImageView
+                       android:id="@+id/icon_add"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:layout_marginRight="24dp"
+                       android:src="@mipmap/note_icon_add"
+                       android:layout_alignParentRight="true"
+                       />
+               </RelativeLayout>
+           </RelativeLayout>
+
+       </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/my_notes_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="250dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_round_black"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <ImageView
+                            android:id="@+id/note_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:background="@mipmap/recommend_imagea" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/note_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="2018，我们的丽江探亲之旅！"
+                                android:textColor="@color/black"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/note_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/note_title"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingExtra="3dp"
+                                android:paddingBottom="10dp"
+                                android:text="2018年5月20日上午，缪先生公司的车来家里接他，车子启动的那一刻，我的眼泪还是忍不住哗啦啦的淌下来，有依恋、有不舍，更觉空落落的，一种说不出的感觉……
+从此，他过上了异地工作的单身生活，我们踏上了丽江的探亲之旅！"
+                                android:textColor="@color/text_normal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/note_content"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="2018.05.20"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/text_normal"
+                                    android:layout_marginRight="20dp"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="250dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_round_black"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <ImageView
+                            android:id="@+id/note_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:background="@mipmap/recommend_imagec" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/note_title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="小皇宫"
+                                android:textColor="@color/black"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/note_content2"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/note_title2"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingExtra="3dp"
+                                android:paddingBottom="10dp"
+                                android:text="原本计划去香港迪斯尼，无奈禽流感肆虐，临时起意改为最大的港口城市滨城大连，景点有星海广场、老虎滩、棒槌岛、金石滩等，入住酒店最初预定了桔子和朋友推荐的锦江之星，后来无意中看到雪鸮国际青年公寓，住惯了商务酒店想体验一下青旅，于是便住了进来，顺便锻炼下我家小伙子。"
+                                android:textColor="@color/text_normal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/note_content2"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="2018.04.25"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/text_normal"
+                                    android:layout_marginRight="20dp"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="250dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_round_black"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <ImageView
+                            android:id="@+id/note_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:background="@mipmap/recommend_imageb" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/note_title1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="大连行"
+                                android:textColor="@color/black"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/note_content1"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_below="@id/note_title1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingExtra="3dp"
+                                android:paddingBottom="10dp"
+                                android:text="原本计划去香港迪斯尼，无奈禽流感肆虐，临时起意改为最大的港口城市滨城大连，景点有星海广场、老虎滩、棒槌岛、金石滩等，入住酒店最初预定了桔子和朋友推荐的锦江之星，后来无意中看到雪鸮国际青年公寓，住惯了商务酒店想体验一下青旅，于是便住了进来，顺便锻炼下我家小伙子。"
+                                android:textColor="@color/text_normal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/note_content1"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="2018.03.14"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/text_normal"
+                                    android:layout_marginRight="20dp"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

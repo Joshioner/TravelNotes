@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">TravelNotes</string>
+    <!--首页-->
+    <string name="home_page">首页</string>
+    <!--游记-->
+    <string name="note">游记</string>
+    <!--我的-->
+    <string name="me">我的</string>
+    //我的
+    <string name="my">个人信息</string>
+    <string name="my_name">杨洋</string>
+    <string name="family_group">个人游记</string>
+    <string name="tel_bind">手机绑定</string>
+    <string name="mail_bind">邮箱绑定</string>
+    <string name="my_msg">消息</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_order">订单</string>
+    <string name="help_center">帮助中心</string>
+    <string name="my_set">设置</string>
+    <string name="welcome_load">邀请下载</string>
+
+    <string name="edit_person_info">编辑资料</string>
+
+    <string name="follow">关注</string>
+    <string name="recommend">推荐</string>
 </resources>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/follow_image"
+    android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:id="@+id/home_page_bar"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <RelativeLayout
+                   android:id="@+id/relative_01"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="30dp"
+                   android:layout_marginBottom="8dp"
+                   android:layout_alignParentTop="true">
+                   <ImageView
+                       android:id="@+id/icon_more"
+                       android:layout_width="20dp"
+                       android:layout_height="15dp"
+                       android:layout_marginLeft="24dp"
+                       android:src="@mipmap/home_page_more"
+                       android:layout_alignBottom="@+id/textView2"
+                       android:layout_alignParentLeft="true"
+                       android:layout_alignParentStart="true" />
+                   <TextView
+                       android:id="@+id/textView2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/note"
+                       android:textSize="18dp"
+                       android:layout_centerHorizontal="true"
+                       android:textColor="@color/white"
+                       />
+               </RelativeLayout>
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+     <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海 | 生命有一种绝对"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="    上海，这个城市也不需要过多的去说，因为它在每个国人心中都有一个位置，无论从影视剧里的灯红酒绿、帮派林立、英雄纵横，还是殖民侵略、战火纷飞，直至改革开放、傲立东风。"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="    在过去的100多年里，上海所经历的事情，就是中国所经历的事情。有曾经的屈辱，也有今天的荣耀。时下，我们都称上海为魔都（Majic City），一座充满着际遇与挑战的魔力之都。"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="    这个周末再次来到上海，走了田子坊与上海市博物馆，也去了城隍庙与外滩，一切都在变化，一切又似乎没变，城市旅行就是这样，选择几个感兴趣的点，走一走看一看，吃些当地美食，睡一场好觉，这才是属于城市的周末之旅。"
+                android:lineSpacingExtra="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="    美图先看："
+                android:lineSpacingExtra="8dp"
+                />
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@mipmap/notea"
+                />
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@mipmap/noteb"
+                />
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@mipmap/notec"
+                />
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@mipmap/noted"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="    【关于行程】"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:text="    【Day1】走进上海的曾经，躺在美豪的梦里"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:text="    8:00 南京出发"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:text="    10:00 游览田子坊"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:text="    13:00 参观上海市博物馆"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:text="    17:00 入住美豪丽致酒店（川沙店）"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:text="    【Day2】逛城隍老庙，听外滩川流"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:text="    08:00 酒店早餐"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:text="    9:30 游览城隍庙 豫园"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:text="    11:00 外滩"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/white"
+                android:text="    14:00 返程"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评论（65）"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/text_normal"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    >
+
+                    <com.travelNotes.common.XCRoundImageView
+                        android:id="@+id/note_imagea"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/my_photo"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/note_imagea"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="_CFT0****9399"
+                        android:textColor="@color/black"
+                        />
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="知道这是哪么？"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5dp"
+                            />
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发表于 2018-06-07 20:37 "
+                            android:textColor="@color/text_normal"
+                            />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/text_normal"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    >
+
+                    <com.travelNotes.common.XCRoundImageView
+                        android:id="@+id/note_imageb"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/my_photo1"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/note_imageb"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="远方有诗和飞鸟"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="明天就要去魔都了，很激动"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5dp"
+                            />
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发表于 2018-04-04 23:27 "
+                            android:textColor="@color/text_normal"
+                            />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
